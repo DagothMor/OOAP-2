@@ -16,10 +16,10 @@ namespace OOAP
             // Пример полиморфизма.
             sayName(employee);
 
-            // Example Usage
+            // Реализация композиции
             var myLibrary = new Library
             {
-                Name = "Central Library",
+                Name = "Lib",
                 BookShelves = new List<BookShelf>
     {
         new BookShelf
@@ -29,15 +29,9 @@ namespace OOAP
             {
                 new Book
                 {
-                    Title = "C# in Depth",
-                    Author = "Jon Skeet",
+                    Title = "BOOK",
+                    Author = "Topse Cret",
                     YearPublished = 2019
-                },
-                new Book
-                {
-                    Title = "The Pragmatic Programmer",
-                    Author = "Andy Hunt & Dave Thomas",
-                    YearPublished = 1999
                 }
             }
         }
