@@ -19,6 +19,6 @@ namespace OOAP
     public class GrandChild : Child
     {
         // Ошибка билда, пытаемся переопределить запечатанный метод.
-        public sealed override void Display() { }
+        //public sealed override void Display() { }
     }
 }
