@@ -14,7 +14,7 @@ namespace OOAP
         // Это просто пример динамического получателя,напрашивается dynamic с multiple dispatch, но чувствуется что я чтото не так понял.
         static void Foo(int x) { Console.WriteLine("1"); }
         static void Foo(string x) { Console.WriteLine("2"); }
-        static void Main()
+        static void Main1()
         {
             dynamic x = 5;
             dynamic y = "watermelon";

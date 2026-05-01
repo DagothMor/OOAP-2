@@ -10,22 +10,22 @@ namespace OOAP
     // Все же это была таблица override, все так просто...
 
     // Пример Ковариантности
-    public class B1 { }
-    public class B2 : B1 { }
-    public class A1
-    {
-        public virtual B1 Foo()
-        {
-            return new B1();
-        }
-    }
+    //public class B1 { }
+    //public class B2 : B1 { }
+    //public class A1
+    //{
+    //    public virtual B1 Foo()
+    //    {
+    //        return new B1();
+    //    }
+    //}
 
-    public class A2 : A1
-    {
-        public override B2 Foo() {
-            return new B2();
-        }
-    }
+    //public class A2 : A1
+    //{
+    //    public override B2 Foo() {
+    //        return new B2();
+    //    }
+    //}
 
     //________________________________________
 
