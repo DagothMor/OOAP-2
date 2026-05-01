@@ -61,7 +61,7 @@
 //    public class A4
 //    {
 //        public A4() { }
-//        private protected void foo() { Console.WriteLine("Фубар"); }
+//        private protected void foo() { Console.WriteLine("Fubar"); }
 //    }
 
 //    public class B4 : A4
