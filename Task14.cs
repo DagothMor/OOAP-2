@@ -7,41 +7,6 @@ using System.Threading.Tasks;
 
 namespace OOAP
 {
-    //1 вариант может быть таким
-
-    //public interface IAddable<T>
-    //{
-    //    T Add(T other);
-    //}
-
-    //public class Vector<T> where T : General, IAddable<T>
-    //{
-    //    private T[] _elements;
-
-    //    public Vector(T[] elements)
-    //    {
-    //        _elements = elements ?? throw new ArgumentNullException(nameof(elements));
-    //    }
-
-    //    public int Length => _elements.Length;
-
-    //    public T this[int index] => _elements[index];
-
-    //    public static Vector<T> operator +(Vector<T> a, VectorA<T> b)
-    //    {
-    //        if (a.Length != b.Length)
-    //            return null;
-
-    //        var result = new T[a.Length];
-    //        for (int i = 0; i < a.Length; i++)
-    //        {
-    //            result[i] = (dynamic)a[i] + (dynamic)b[i];
-    //        }
-    //        return new VectorA<T>(result);
-    //    }
-    //}
-
-
     public class Vector<T> : General 
     {
         public T Vectors { get; set; }         
