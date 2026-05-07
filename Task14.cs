@@ -15,34 +15,34 @@ namespace OOAP
         public Vector(T value) { }
 
         // Как то так должно быть
-        public static Vector<T> operator +(Vector<T> a, Vector<T> b)
-        {
+        //public static Vector<T> operator +(Vector<T> a, Vector<T> b)
+        //{
 
-            if (a is null || b is null)
-            {
+        //    if (a is null || b is null)
+        //    {
 
-            }
-            if (GetListType(a.GetType()) is ICollection && GetListType(b.GetType()) is ICollection)
-            {
-                var thisVec = a.Vectors as List<T>;
+        //    }
+        //    if (GetListType(a.GetType()) is ICollection && GetListType(b.GetType()) is ICollection)
+        //    {
+        //        var thisVec = a.Vectors as List<T>;
 
-                var otherVec = b.Vectors as List<T>;
+        //        var otherVec = b.Vectors as List<T>;
 
-                if(thisVec.Count != otherVec.Count)
-                {
-                    return null;
-                }
+        //        if(thisVec.Count != otherVec.Count)
+        //        {
+        //            return null;
+        //        }
 
-                if (thisVec.First().GetType() is ICollection)
-                {
-                    return a + b;
-                }
-                for (int i = 0; i < thisVec.Count; i++) 
-                {
+        //        if (thisVec.First().GetType() is ICollection)
+        //        {
+        //            return a + b;
+        //        }
+        //        for (int i = 0; i < thisVec.Count; i++) 
+        //        {
                     
-                }
-            }
-        }
+        //        }
+        //    }
+        //}
 
         static Type GetListType(Type type)
         {

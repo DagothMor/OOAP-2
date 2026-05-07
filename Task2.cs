@@ -19,10 +19,10 @@ namespace OOAP
     {
         public byte[] sign { get; set; }
     }
-    public class Document
-    {
-        public Signature Signature { get; set; }
-    }
+    //public class Document
+    //{
+    //    public Signature Signature { get; set; }
+    //}
 
     //                               |Расширение класса родителя усиленной цифровой подписью|.
     public class Contract : Document, IEnchancedSign
