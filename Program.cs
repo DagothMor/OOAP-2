@@ -76,17 +76,29 @@ namespace OOAP
     {
         static void Main(string[] args)
         {
-            var sample1 = new B1();
-            sample1.foo();
 
-            var sample2 = new B2();
-            //sample2.A2Public();
+            var cat = new Cat();
 
-            var sample3 = new B3();
-            InstanceMethod(sample3);
+            var supAbsCat = cat as SuperAbstractCat;
 
-            var sample4 = new B4();
-            sample4.A4Hidden();
+            supAbsCat.Purr();
+
+            var supCat = supAbsCat as Cat;
+
+            supCat.Meow();
+            supCat.Purr();
+
+            //var sample1 = new B1();
+            //sample1.foo();
+
+            //var sample2 = new B2();
+            ////sample2.A2Public();
+
+            //var sample3 = new B3();
+            //InstanceMethod(sample3);
+
+            //var sample4 = new B4();
+            //sample4.A4Hidden();
 
 
         }
