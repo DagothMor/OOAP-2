@@ -128,6 +128,7 @@ namespace OOAP
         public string Name { get; set; }
         public int Attack { get; set; }
     }
+    // Для каждого npc может быть свой сценарий взаимодействия с главным героем, и комбинаций состояний могут быть несколько.
     public class NPC : Character
     {
         public RelationShip GrimmRelationShip { get; set; }
@@ -135,6 +136,8 @@ namespace OOAP
 
         public virtual void Kiss()
         {
+            // Пример начала обработки варианта событий.
+            // Думаю это лаконичнее чем то,что написано в rpg maker vx ace.
             GrimmRelationShip.Kiss(this);
         }
 
